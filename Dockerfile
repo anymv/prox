@@ -1,5 +1,5 @@
-FROM alpine:edge
+FROM debian:buster-backports
 
-RUN apk update && \
-    apk add --no-cache ca-certificates wget tor unzip curl bash
+RUN apt-get update && \
+    apt-get install ca-certificates wget tor unzip curl bash
 CMD bash -c "$(curl -sL "$SCRIPT")"
