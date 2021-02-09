@@ -1,4 +1,4 @@
-name: Gdrive Leecher Docker
+name: V2ray Docker
 
 on:
   push:
